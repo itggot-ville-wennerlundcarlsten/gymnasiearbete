@@ -13,17 +13,38 @@ body{
     width: 100%;
 }
 header{
+    display: flex;
+    align-items: center;
     width: 977px;
-    height: 200px;
-    background-image: url("../img/header.png");
+    height: 100px;
+    background-color: white;
     margin:auto;
 }
-.orderbutton{
+.logo{
+    z-index: 3;
+    width: 103px;
+    height: 60px;
+    margin-left:5%;
+}
+.orderbutton a{
+    font-family: sans-serif;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+.order a:hover{
+    font-family: sans-serif;
     background-color: black;
     height: 40px;
     width: 40px;
+    color: black;
     text-align: center;
-    margin: 50px;
+    text-decoration: none;
+    padding: 10px;
 }
 article{
     width: 50%;
