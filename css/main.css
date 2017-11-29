@@ -5,6 +5,7 @@ body{
     background-size: cover;
     margin: 0;
     padding: 0;
+
 }
 .wrapper{
     display: flex;
@@ -16,7 +17,7 @@ header{
     display: flex;
     align-items: center;
     width: 60%;
-    height: 100px;
+    height: 120px;
     background-color: white;
     border-radius: 0px 0px 36px 36px;
     position: fixed;
@@ -25,8 +26,8 @@ header{
 }
 .logo{
     z-index: 3;
-    width: 103px;
-    height: 60px;
+    width: 140px;
+    height: 100px;
     margin-left:5%;
 }
 
@@ -86,4 +87,5 @@ footer{
 }
 footer table{
     margin: auto;
+    font-family: sans-serif;
 }
