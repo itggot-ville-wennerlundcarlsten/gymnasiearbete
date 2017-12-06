@@ -1,8 +1,10 @@
 body{
     background-image: url("../img/background.jpg");
     width: 100%;
+    height: 1080px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
 }
@@ -22,17 +24,43 @@ header{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 50px;
     z-index: 2;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu button{
+    margin-left: 10% ;
+    margin-right: 10%;
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:#0CF;
+    color:#FFF;
+    padding:10px;
+    font-size:15px;
+}
+.menu button:hover{
+    background:#09C;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
 }
 .logo{
     z-index: 3;
-    width: 140px;
-    height: 100px;
+    width: 150px;
     margin-left:5%;
-    margin-top: 4%;
+    transition: 0.5s;
 }
 
+.logo:hover img{
+   /* -webkit-filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.24));
+    filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.24)); */
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
@@ -53,8 +81,8 @@ body {
 }
 
 .container {
-    max-width:780px;
-    width:100%;
+    width:50%;
+    height: 935px;
     margin:0 auto;
     position:relative;
     margin-top: 70px;
@@ -63,11 +91,11 @@ body {
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
-    width: 780px;
-    background:#F9F9F9;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
     padding:25px;
-    margin:50px 0 0 0;
-    padding-top: 60px;
+    padding-top: 110px;
     padding-bottom: 200px;
     border-radius: 0px 0px 36px 36px;
 }
@@ -156,9 +184,10 @@ fieldset {
 
 footer{
     display: flex;
+    height: 0;
     border-radius: 36px 36px 0px 0px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 68px;
     width: 50%;
     z-index: 2;
     align-content: flex-end;
